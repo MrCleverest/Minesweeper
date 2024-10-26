@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Minesweeper Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>	
+	<!-- Cтворити гру сапер -->
+	<header>
+		<h1>Minesweeper Online</h1>&nbsp&nbsp
+		<div class="tooltip-container">
+        <div class="icon">?</div>
+        <div class="tooltip">Left click - open the cell.<br> Right click - set the flag.</div>
+    </div>
+	</header>
+	<main><center>
+	<div class="table">
+	<div class="line">
+		<div class="cell" id="x0y0" onClick="main()"></div>
+		<div class="cell" id="x1y0" onClick="main()"></div>
+		<div class="cell" id="x2y0" onClick="main()"></div>
+		<div class="cell" id="x3y0" onClick="main()"></div>
+		<div class="cell" id="x4y0" onClick="main()"></div>
+		<div class="cell" id="x5y0" onClick="main()"></div>
+		<div class="cell" id="x6y0" onClick="main()"></div>
+		<div class="cell" id="x7y0" onClick="main()"></div>
+		<div class="cell" id="x8y0" onClick="main()"></div>
+		<div class="cell" id="x9y0" onClick="main()"></div>
+	</div><br>
+	<div class="line">
+		<div class="cell" id="x0y1" onClick="main()"></div>
+		<div class="cell" id="x1y1" onClick="main()"></div>
+		<div class="cell" id="x2y1" onClick="main()"></div>
+		<div class="cell" id="x3y1" onClick="main()"></div>
+		<div class="cell" id="x4y1" onClick="main()"></div>
+		<div class="cell" id="x5y1" onClick="main()"></div>
+		<div class="cell" id="x6y1" onClick="main()"></div>
+		<div class="cell" id="x7y1" onClick="main()"></div>
+		<div class="cell" id="x8y1" onClick="main()"></div>
+		<div class="cell" id="x9y1" onClick="main()"></div>
+	</div><br>
+	<div class="line">
+		<div class="cell" id="x0y2" onClick="main()"></div>
+		<div class="cell" id="x1y2" onClick="main()"></div>
+		<div class="cell" id="x2y2" onClick="main()"></div>
+		<div class="cell" id="x3y2" onClick="main()"></div>
+		<div class="cell" id="x4y2" onClick="main()"></div>
+		<div class="cell" id="x5y2" onClick="main()"></div>
+		<div class="cell" id="x6y2" onClick="main()"></div>
+		<div class="cell" id="x7y2" onClick="main()"></div>
+		<div class="cell" id="x8y2" onClick="main()"></div>
+		<div class="cell" id="x9y2" onClick="main()"></div>
+	</div><br>
+	<div class="line">
+		<div class="cell" id="x0y3" onClick="main()"></div>
+		<div class="cell" id="x1y3" onClick="main()"></div>
+		<div class="cell" id="x2y3" onClick="main()"></div>
+		<div class="cell" id="x3y3" onClick="main()"></div>
+		<div class="cell" id="x4y3" onClick="main()"></div>
+		<div class="cell" id="x5y3" onClick="main()"></div>
+		<div class="cell" id="x6y3" onClick="main()"></div>
+		<div class="cell" id="x7y3" onClick="main()"></div>
+		<div class="cell" id="x8y3" onClick="main()"></div>
+		<div class="cell" id="x9y3" onClick="main()"></div>
+	</div><br>
+	<div class="line">
+		<div class="cell" id="x0y4" onClick="main()"></div>
+		<div class="cell" id="x1y4" onClick="main()"></div>
+		<div class="cell" id="x2y4" onClick="main()"></div>
+		<div class="cell" id="x3y4" onClick="main()"></div>
+		<div class="cell" id="x4y4" onClick="main()"></div>
+		<div class="cell" id="x5y4" onClick="main()"></div>
+		<div class="cell" id="x6y4" onClick="main()"></div>
+		<div class="cell" id="x7y4" onClick="main()"></div>
+		<div class="cell" id="x8y4" onClick="main()"></div>
+		<div class="cell" id="x9y4" onClick="main()"></div>
+	</div><br>
+	<div class="line">
+		<div class="cell" id="x0y5" onClick="main()"></div>
+		<div class="cell" id="x1y5" onClick="main()"></div>
+		<div class="cell" id="x2y5" onClick="main()"></div>
+		<div class="cell" id="x3y5" onClick="main()"></div>
+		<div class="cell" id="x4y5" onClick="main()"></div>
+		<div class="cell" id="x5y5" onClick="main()"></div>
+		<div class="cell" id="x6y5" onClick="main()"></div>
+		<div class="cell" id="x7y5" onClick="main()"></div>
+		<div class="cell" id="x8y5" onClick="main()"></div>
+		<div class="cell" id="x9y5" onClick="main()"></div>
+	</div><br>
+	<div class="line">
+		<div class="cell" id="x0y6" onClick="main()"></div>
+		<div class="cell" id="x1y6" onClick="main()"></div>
+		<div class="cell" id="x2y6" onClick="main()"></div>
+		<div class="cell" id="x3y6" onClick="main()"></div>
+		<div class="cell" id="x4y6" onClick="main()"></div>
+		<div class="cell" id="x5y6" onClick="main()"></div>
+		<div class="cell" id="x6y6" onClick="main()"></div>
+		<div class="cell" id="x7y6" onClick="main()"></div>
+		<div class="cell" id="x8y6" onClick="main()"></div>
+		<div class="cell" id="x9y6" onClick="main()"></div>
+	</div><br>
+	<div class="line">
+		<div class="cell" id="x0y7" onClick="main()"></div>
+		<div class="cell" id="x1y7" onClick="main()"></div>
+		<div class="cell" id="x2y7" onClick="main()"></div>
+		<div class="cell" id="x3y7" onClick="main()"></div>
+		<div class="cell" id="x4y7" onClick="main()"></div>
+		<div class="cell" id="x5y7" onClick="main()"></div>
+		<div class="cell" id="x6y7" onClick="main()"></div>
+		<div class="cell" id="x7y7" onClick="main()"></div>
+		<div class="cell" id="x8y7" onClick="main()"></div>
+		<div class="cell" id="x9y7" onClick="main()"></div>
+	</div><br>
+	<div class="line">
+		<div class="cell" id="x0y8" onClick="main()"></div>
+		<div class="cell" id="x1y8" onClick="main()"></div>
+		<div class="cell" id="x2y8" onClick="main()"></div>
+		<div class="cell" id="x3y8" onClick="main()"></div>
+		<div class="cell" id="x4y8" onClick="main()"></div>
+		<div class="cell" id="x5y8" onClick="main()"></div>
+		<div class="cell" id="x6y8" onClick="main()"></div>
+		<div class="cell" id="x7y8" onClick="main()"></div>
+		<div class="cell" id="x8y8" onClick="main()"></div>
+		<div class="cell" id="x9y8" onClick="main()"></div>
+	</div><br>
+	<div class="line">
+		<div class="cell" id="x0y9" onClick="main()"></div>
+		<div class="cell" id="x1y9" onClick="main()"></div>
+		<div class="cell" id="x2y9" onClick="main()"></div>
+		<div class="cell" id="x3y9" onClick="main()"></div>
+		<div class="cell" id="x4y9" onClick="main()"></div>
+		<div class="cell" id="x5y9" onClick="main()"></div>
+		<div class="cell" id="x6y9" onClick="main()"></div>
+		<div class="cell" id="x7y9" onClick="main()"></div>
+		<div class="cell" id="x8y9" onClick="main()"></div>
+		<div class="cell" id="x9y9" onClick="main()"></div>
+	</div><br>
+	</div>
+    </center></main>
+    <script src="script.js"></script>
+</body>
+</html>

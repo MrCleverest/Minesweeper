@@ -1,0 +1,111 @@
+/* Стилі для сторінки загалом */
+body {
+    font-family: Arial, sans-serif;
+    user-select: none;
+}
+header {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h2 {
+    text-align: center;
+}
+main {
+    justify-content: center;
+    align-items: center;
+}
+img {
+    width: 30px;
+    height: 30px;
+}
+.table {
+    border: 5px solid black;
+    width: 500px;
+    height: 476px;
+    padding-top: 19px;
+}
+.line {
+    display: flex;
+    margin-top: -19px;
+}
+.cell {
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center; /* Центрування по горизонталі */
+    align-items: center;     /* Центрування по вертикалі */
+    text-align: center;
+    box-sizing: border-box; 
+    font-size: 18px;
+    color: blue;
+}
+#overlay {
+    position: fixed; /* Фіксована позиція */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Напівпрозорий фон */
+    color: white; /* Білий текст */
+    display: flex; /* Використовуємо flexbox для центрування */
+    flex-direction: column; /* Вертикальне вирівнювання */
+    align-items: center; /* Центрування по вертикалі */
+    justify-content: center; /* Центрування по горизонталі */
+    font-size: 2em; /* Розмір шрифту */
+    z-index: 9999; /* Високий z-index для перекриття */
+}
+
+#restartButton {
+    margin-top: 20px; /* Відступ між текстом і кнопкою */
+    padding: 10px 20px; /* Внутрішні відступи для кнопки */
+    font-size: 1em; /* Розмір шрифту для кнопки */
+    background-color: #ff0000; /* Червоний фон для кнопки */
+    color: white; /* Білий текст для кнопки */
+    border: none; /* Без обводки */
+    border-radius: 5px; /* Закруглені кути */
+    cursor: pointer; /* Курсор при наведенні */
+}
+
+#restartButton:hover {
+    background-color: #cc0000; /* Темніший червоний при наведенні */
+}
+ /* Як грати */
+.tooltip-container {
+            position: relative; /* Для позиціонування підказки */
+            display: inline-block; /* Відображає контейнер як рядковий елемент */
+        }
+
+        .icon {
+            width: 30px; /* Ширина іконки */
+            height: 30px; /* Висота іконки */
+            background-color: lightgray; /* Колір фону */
+            border-radius: 50%; /* Робимо іконку круглою */
+            display: flex;
+            justify-content: center; /* Центруємо текст по горизонталі */
+            align-items: center; /* Центруємо текст по вертикалі */
+            cursor: pointer; /* Курсор при наведенні */
+            font-size: 20px; /* Розмір тексту */
+            margin-bottom: 5px; /* Відстань між іконкою і текстом */
+        }
+
+        .tooltip {
+            display: none; /* Сховуємо текст за замовчуванням */
+            position: absolute; /* Позиціонування відносно контейнера */
+            top: 100%; /* Позиція під іконкою */
+            left: 50%; /* Центруємо по горизонталі */
+            transform: translateX(-50%); /* Центруємо по горизонталі */
+            background-color: #333; /* Колір фону підказки */
+            color: white; /* Колір тексту */
+            padding: 5px; /* Внутрішні відступи */
+            border-radius: 5px; /* Закруглення країв */
+            white-space: nowrap; /* Запобігає переносу тексту */
+            z-index: 1; /* Щоб підказка була над іншими елементами */
+        }
+
+        .tooltip-container:hover .tooltip {
+            display: block; /* Показуємо текст при наведенні на контейнер */
+        }
